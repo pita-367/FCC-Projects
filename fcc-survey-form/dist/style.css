@@ -1,0 +1,128 @@
+/* class/id names for formatting
+class ="form-section"
+class = "labels"
+class = "options"
+*/
+@import 
+  url(https://fonts.googleapis.com/css?family=Abril+Fatface|Quattrocento&display=swap);
+
+html, body {
+  font-size: 18px;
+  background-color: white; 
+  font-family: 'Quattrocento', serif;
+  color: hsl(0,0%,87%);
+  
+}
+
+#form{
+  background-color: hsl(275,40%,26%); 
+  padding: 20px;
+  margin: 30px;
+}
+
+#title{
+  font-family: 'Abril Fatface', cursive;
+  text-align: center;
+}
+
+#description{
+  text-align: center;
+  padding: 10px;
+  margin: 30px;
+  
+  
+}
+.form-section {
+  display: block;
+  margin: 10px;
+  padding: 5px;
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  padding: 5px; 
+  vertical-align: middle;
+  width: 30%;
+}
+
+.options {
+  display: inline-block;
+  text-align: left;
+  padding: 5px;  
+  vertical-align: middle;
+}
+
+.input-field{
+  height: 20px;
+  width: 200px;
+  padding: 5px;
+  margin-left: 20px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.userRatings {
+  float: left;
+  display: inline-block;
+  text-align: left;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.radio, .checkbox {
+  position: relative;
+  left: -30px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+  
+}
+
+.dropdown {
+  height: 35px;
+  width: 200px;
+  padding: 5px;
+  margin: 10px;  
+}
+
+button[id="submit"]{
+  display: block;
+  padding: 5px;
+  margin: 30px;
+  border: 2px solid hsl(279,180%,15%);
+  border-radius: 20px;
+  background-color: white;
+  color: hsl(275,180%,23%);
+  font-family: 'Abril Fatface', cursive;
+  font-size: 1.5em;
+  height: 50px;
+  width: 150px;
+  margin: 0 auto;
+
+ 
+}
+
+button[id="submit"]:hover{
+  background-color: hsl(95,100%,20%);
+  color:hsl(0,0%,87%);
+}
+
+footer {
+  background-color: hsl(275,40%,20%); 
+  padding:30px;
+  margin-top: 30px;
+  margin-bottom: -20px;
+  margin-right: -20px;
+  margin-left: -20px;
+}
+
+@media screen and (max-width: 500px) {
+  .input-field {
+    width: 80%;
+  }
+  .dropdown {
+    width: 80%;
+}
+
+}

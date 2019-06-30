@@ -1,0 +1,97 @@
+<!--
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+-->
+<!-- Pushpita Rahman 6/2019 -->
+<div id ="form">
+  <h1 id="title"> Survey Form </h1>
+  <p id="description">
+    Thank you using our services. <br> Please leave feedback to help us improve our services.
+  </p>
+  
+  <form id ="survey-form" method ="GET" action = "">
+  
+    <div class="form-section">
+      <div class="labels">
+        <label id="name-label" for="name"> * Name: </label>
+      </div>
+      <div class="options">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+    
+    <div class="form-section">
+    <div class="labels">
+        <label id="email-label" for="email"> * Email: </label>
+      </div>
+      <div class="options">
+        <input autofocus type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
+      </div>
+    </div>
+    
+    <div class="form-section">
+       <div class="labels">
+        <label id="number-label" for="number"> * How often do you use our services per month? </label>
+      </div>
+      <div class="options">
+        <input autofocus type="number" name="number" id="number" class="input-field" placeholder="Number of days" min="0" max="31" required>
+      </div>
+    </div>
+    
+      <div class="form-section">
+          <div class="labels">
+        <label for="userRatings"> How likely are you to refer someone to our services?</label>
+      </div>
+      <div class="options">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Extremely Likely<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Very Likely<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Somewhat Likely<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Slightly Likely<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Not Likely at all<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="form-section">
+      <div class="labels">
+        <label for="most-like">What service did you use the most? </label>
+      </div>
+      <div class="options">
+        <select id="dropdown" name="mostLike" class="dropdown">
+      <option disabled selected value>Select an option</option>
+      <option value="counseling">Career Counseling</option>
+      <option value="reviews">Resume Review</option>
+      <option value="interviews">Mock Interviews</option>
+      <option value="events">Networking Events</option>
+    </select>
+      </div>
+    </div>
+    
+ <div class="form-section">
+      <div class="labels">
+        <label for="preferences">Things that should be improved<br>(Check all that apply): </label>
+      </div>
+      <div class="options">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Career Counseling</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Resume Review</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Mock Inteviews</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Networking Events</label></li>
+        </ul>
+      </div>
+    </div>
+
+   <div class="form-section">
+     <div class="labels">
+        <label for="comments">Any Comments or Suggestions?</label>
+      </div>
+      <div class="options">
+        <textarea id="comments" class="input-field" style="height:50px;resize;" name="comment" placeholder="Comments..."></textarea>
+      </div>
+    </div>
+    
+    <button id="submit" type="submit"> Submit </button>
+    
+  </form>  
+  <footer> Created for freeCodeCamp by Pushpita Rahman </footer>
+</div>
