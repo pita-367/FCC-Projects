@@ -1,0 +1,99 @@
+html {
+  font-size:16px;
+}
+/* 500px / 16px = 31.25em */
+@media (max-width: 31.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  text-align:center;
+  color: #333;
+  margin: 0;
+}
+
+h1 {
+  font-size:4rem;
+  margin-bottom:0;
+}
+
+img {
+  max-width:100%;
+  display: block;
+  height: auto;
+  margin:0 auto;
+}
+
+#img-div {
+  background: white;
+  padding: 10px;
+  margin:0;
+}
+
+#img-caption {
+  margin: 15px 0 5px 0;
+  font-size: .85rem;
+  
+}
+
+#headline {
+  margin: 30px 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+#movie-timeline{
+  /*background: LightSeaGreen;*/
+}
+#content  { 
+	text-align:left;
+  margin:30px;;
+  font-size:1.5rem;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: teal;
+  border-radius: 50%;
+  display: inline-block;
+  align: left;
+  
+  
+}
+.movie {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding:5px;
+}
+.movie >img {
+  width:25%;
+  height:25%; 
+  visibility: hidden;
+
+}
+
+.movie:hover >img {
+  visibility: visible;
+
+}
+.movie:hover >p {
+  background-color: hsl(170,150%,90%);
+
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+#tribute-info > p {
+  margin:20px; 
+  padding:10px
+
+}
