@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>FCC Technical Documentation</title>
+  
+  
+  
+      <link rel="stylesheet" href="./style.css">
+
+  
+</head>
+
+<body>
+
+  
+
+<nav id="navbar">
+  <header> PHP Documentation </header>
+    <ul>
+    <li>
+      <a class="nav-link" href="#Introduction">
+        Introduction
+      </a>
+      </li>
+      
+      <li>
+      <a class="nav-link" href="#Get_Started">
+        Get Started
+      </a>
+      </li>
+      
+      <li>
+      <a class="nav-link" href="#Basic_Syntax">
+        Basic Syntax
+      </a>
+      </li>
+      
+      <li>
+      <a class="nav-link" href="#Variables">
+        Variables
+      </a>
+      </li>
+      
+      <li>
+      <a class="nav-link" href="#Data_Types">
+        Data Types
+      </a>
+      </li>
+      
+      <li>
+      <a class="nav-link" href="#Conditional_Statements">
+        Conditional Statements
+      </a>
+      </li>
+      
+      <li>
+      <a class="nav-link" href="#While_Loops">
+        While Loops
+      </a>
+      </li>
+      
+      <li>
+      <a class="nav-link" href="#For_Loops">
+       For Loops
+      </a>
+      </li>
+      
+      <li>
+      <a class="nav-link" href="#Functions">
+       Functions
+      </a>
+      </li>
+      
+      <li>
+      <a class="nav-link" href="#Reference">
+        Reference
+      </a>
+      </li>
+</nav>
+
+<main id="main-doc">
+  
+  <section class="main-section" id="Introduction">
+    <header> Introduction </header>
+    <article> 
+      <p> 
+        PHP stands for PHP: Hypertext Preprocessor and is a widely-used, open source scripting language that gets executed on the server. It is free to download and use, and easy enough to be a beginner's first server side language. It's powerful enough to be at the core of the biggest blogging system on the web, WordPress, and deep enough to run the largest social network, Facebook. 
+      </p>
+      
+      <p> 
+        A PHP file has the extension ".php" and can contain text, HTML, CSS, JavaScript, and PHP code. The PHP code is executed on the server and the result is returned to the browser as plain HTML. PHP is commonly used because it can run on various platforms and is compatiable with almost all servers today. Additionally, its fast, flexible, free, and supports a wide range of databases. 
+      </p>
+      
+      <p> 
+        PHP can do many things including: 
+       <ul>
+         <li> Generate dynamic page content </li> 
+         <li> Create, open, read, write, delete, and close files on the server </li> 
+         <li> Collect form data </li> 
+         <li> Generate dynamic page content </li> 
+         <li> Send and receive cookies </li> 
+         <li> Add, delete, modify data in your database </li> 
+         <li> Control user-access </li> 
+         <li> Output images, PDF files, and even Flash movies </li> 
+         
+      </ul>
+      </p>
+    </article>
+  </section> 
+  
+  <section class="main-section" id="Get_Started">
+    <header> Get Started </header>
+    <article> 
+      
+          <p> 
+    To start using PHP, you can:
+      <ul> 
+
+        <li>Find a web host with PHP and MySQL support </li>
+ <li>Install a web server on your own PC, and then install PHP and MySQL</li>
+    </ul>
+    </p>
+      
+      <p> 
+       You should additionally have a basic understanding of the following: 
+        <ul>
+          <li> HTML </li>
+          <li> CSS </li> 
+          <li> JavaScript </li> 
+      </ul>
+      </p>
+    </article>
+  </section> 
+  
+  
+  <section class="main-section" id="Basic_Syntax">
+    <header> Basic Syntax </header>
+    <article> 
+      <p> 
+        A PHP script starts with <b> &lt;?php </b> and ends with <b>?&gt;</b>
+      </p>
+      
+      <p> 
+        Here is an example of a PHP script that uses a built-in PHP function "echo" to output the text "Hello, World!" on a webpage: 
+        
+        <code> 
+          &lt;?php <br>
+          &nbsp; // this is a comment<br>
+          &nbsp;echo "Hello World!";<br>
+          ?&gt;<br>
+        </code>
+        
+      </p>
+    </article>
+  </section> 
+
+    <section class="main-section" id="Variables">
+    <header> Variables </header>
+    <article> 
+      <p> 
+       Variables are "containers" for storing information. 
+        <br> 
+        A variable starts with the <b>$</b> sign, following by the name of the variable. 
+        <br> 
+        <em>In PHP, no keywords, classes, functions, and user-defined functions are case sensitive. However, variable names are case-sensitive. </em>
+      </p>
+    </article>
+  </section> 
+
+    <section class="main-section" id="Data_Types">
+    <header> Data Types </header>
+    <article> 
+      <p> 
+       PHP supports the following data types: 
+        <ul>
+          <li> String </li>
+          <li> Integer</li>
+          <li> Float</li>
+          <li> Boolean</li>
+          <li> Array</li>
+          <li> Object</li>
+          <li> NULL</li>
+      </ul>
+      
+      Check the data type and value using the PHP function <b>var_dump()</b>
+        <code> 
+          &lt;?php <br>
+          &nbsp;//String<br>
+          &nbsp;$xstring = "Hello world!";<br>
+          &nbsp;//Integer<br>
+          &nbsp;$xint = 10;<br>
+          &nbsp;//Float<br>
+          &nbsp;$xfloat = 5.5;<br>
+          &nbsp;//Boolean<br>
+          &nbsp;$xbool = true;<br>
+          &nbsp;//Array<br>
+          &nbsp;$cars = array("Volvo","BMW","Toyota");<br>
+          &nbsp;//Object<br>
+          &nbsp;class Car {<br>
+          &nbsp;&nbsp;function Car() {<br> 
+          &nbsp;&nbsp;&nbsp;$this->model = "VW"<br>
+          &nbsp;&nbsp;}<br>
+          &nbsp;}<br>
+          &nbsp;// create an object<br> 
+          &nbsp;$herbie = new Car();<br>
+          &nbsp;//NULL<br>
+          &nbsp;$xstring = null;<br>
+          ?&gt;<br>
+        </code> 
+      </p>
+    </article>
+  </section> 
+
+    <section class="main-section" id="Conditional_Statements">
+    <header> Conditional Statements </header>
+    <article> 
+      <p> 
+        Conditional statements are used to perform different actions based on different conditions. 
+      </p>
+      <p>
+        <br>
+        <b>if</b> statement executes some code if one condition is true and <b>else</b> if the condition is false. 
+        <code> 
+          &nbsp; if (condition) { <br> 
+          &nbsp;&nbsp;//code to be executed if condition is true;<br>
+          &nbsp;} else {<br>
+          &nbsp;&nbsp;//code to be executed if condition is false;<br>
+          &nbsp;};<br>
+        </code> 
+        You can use <b>elseif</b> to execute code for more than two conditions, like in the example below. <br>
+        The example below will output "Have a good morning!" if the current time is less than 10, and "Have a good day!" if the current time is less than 20. Otherwise it will output "Have a good night!":
+        <code> 
+          &lt;?php <br>
+          &nbsp;$t = date("H"); <br><br>
+          &nbsp;if ($t &lt; "10") { <br> 
+          &nbsp;&nbsp;echo "Have a good morning!";<br>
+          &nbsp;} elseif ($t &lt; "20") { <br> 
+          &nbsp;&nbsp;echo "Have a good day!";<br>
+          &nbsp;} else {<br>
+          &nbsp;&nbsp;echo "Have a good night!";<br>
+          &nbsp;}<br>
+          ?&gt;<br>
+        </code> 
+      </p>
+      
+      <p>
+        Use the <b>switch</b> statement to select one of many blocks of code to be executed. 
+        <code> 
+          &nbsp; switch (n) {<br>
+          &nbsp;&nbsp;case label1:<br>
+          &nbsp;&nbsp;&nbsp;//code to be executed if n=label1;<br>
+          &nbsp;&nbsp;&nbsp;break;<br>
+          &nbsp;&nbsp;case label2:<br>
+          &nbsp;&nbsp;&nbsp;//code to be executed if n=label2;<br>
+          &nbsp;&nbsp;&nbsp;break;<br>
+          &nbsp;&nbsp;default:<br>
+          &nbsp;&nbsp;//code to be executed if n is different from all labels;<br>
+          &nbsp;};<br>
+        </code> 
+      </p>
+    </article>
+  </section> 
+  
+    <section class="main-section" id="While_Loops">
+    <header> While Loops </header>
+    <article> 
+      <p>
+        Use the <b>while</b> to loop to execute a block of code while the specified condition is true. 
+        <code> 
+          &nbsp;while (condition is true) {<br>
+          &nbsp;&nbsp;//code to be executed;<br>
+          &nbsp;};<br>
+        </code> 
+      </p>
+      
+      <p>
+        Use the <b>do...while</b> to loop through a block of code once, then repeats as long as the specified condition is true.
+        <code> 
+          &nbsp;do {<br>
+          &nbsp;&nbsp;//code to be executed;<br>
+          &nbsp;} while (condition is true);<br>
+        </code> 
+      </p>
+    </article>
+  </section> 
+
+<section class="main-section" id="For_Loops">
+    <header> For Loops </header>
+    <article> 
+      <p>
+        Use the <b>for</b> loop is used when you know in advance how many times the script should run. <br>
+        Parameters :
+        <ul>
+          <li>init counter: Initialize loop counter</li>
+          <li>test counter: Evaluated for each loop iteration. If it evaluates to TRUE, the loop continues. If it evaluates to FALSE, the loop ends.</li>
+          <li>increment counter: Increases the loop counter value</li>
+      </ul>
+        <code> 
+          &nbsp;for (init counter; test counter; increment counter) {<br>
+          &nbsp;&nbsp;//code to be executed;<br>
+          &nbsp;};<br>
+        </code> 
+      </p>
+  
+      <p>
+        The example below displays the numbers from 0 to 10: 
+      <code>
+         &lt;?php <br>
+          &nbsp;for ($x = 0; $x &lt;= 10; $x++) {<br>
+          &nbsp;&nbsp;echo "The number is: $x &lt;br&gt;";<br>
+          &nbsp;};<br>
+          ?&gt;<br>
+      </code>
+      </p>
+      
+    </article>
+  </section> 
+
+<section class="main-section" id="Functions">
+    <header> Functions </header>
+    <article> 
+      <p>
+        <em>PHP has more than 1000 built-in functions</em> 
+      </p>
+      <p>
+        You can also create your own functions with <b>function</b>. A function is a block of statements that can be used repeatedly in a program, but will not execute immediately when a page loads. It gets executed by a call to the function. <br>
+        <em>Function names are NOT case-sensitive</em>
+        <code> 
+          &nbsp;function functionName() {<br>
+          &nbsp;&nbsp;//code to be executed;<br>
+          &nbsp;};<br>
+        </code> 
+      </p>
+      
+      <p>
+        Information can be passed to functions through arguments. An argument is just like a variable. 
+        <code> 
+          &nbsp;function functionName($x) {<br>
+          &nbsp;&nbsp;echo "$x";<br>
+          &nbsp;};<br>
+        </code> 
+      </p>
+      
+            <p>
+        You can also set default parameters. When a function is called without arguements, it takes the default value as argument: 
+        <code> 
+          &nbsp;function functionName($x=5) {<br>
+          &nbsp;&nbsp;echo "$x";<br>
+          &nbsp;};<br>
+        </code> 
+      </p>
+      
+      <p>
+        To let a function return a value, use the <b>return</b> statement
+      </p>
+      
+      <p>
+        The example below uses a default value for x and y when not given and shows how return works:
+        <code> 
+          &lt;?php <br>
+          &nbsp;function sum($x=5,$y=4) {<br>
+          &nbsp;&nbsp;$z = $x + $y;<br>
+          &nbsp;&nbsp;return $z;<br>
+          &nbsp;};<br><br>
+          &nbsp;echo "5 + 10 = " . sum(5,10) . "&lt;br&gt;"; <br>
+          &nbsp;echo "5 + 4 = " . sum() . "&lt;br&gt;"; <br>
+          &nbsp;echo "2 + 4 = " . sum(2,4); <br>
+          ?&gt;<br>
+        </code>
+      </p>
+
+    </article>
+  </section> 
+
+
+    <section class="main-section" id="Reference">
+    <header> Reference </header>
+    <article> 
+      <p> 
+       All documentation in this page is taken from 
+        <a href="https://www.w3schools.com/php/default.asp"
+           target="_blank">
+        w3schools.com
+        </a>
+      </p>
+    </article>
+  </section> 
+  
+</main>
+  
+  
+
+</body>
+
+</html>

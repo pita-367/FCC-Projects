@@ -1,0 +1,104 @@
+html, body {
+   background-color: #F6F5F5;
+   font-size: 16px; 
+}
+
+* {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: #97377D;
+  display: block;
+  padding: 10px 30px;
+  
+}
+
+a:hover {
+  color: #3A1643;
+}
+
+
+#navbar {
+  position: fixed; 
+  min-width: 200px;
+  width: 250px;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  border-right: solid;
+  border-color: #7B007F;
+}
+
+#navbar header {
+  color: #7B007F;
+  font-size: 1.5rem;
+  text-align: center
+}
+
+#navbar  ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  
+}
+
+#navbar li  {  
+  text-decoration: none;
+  list-style: none;
+  border-top: 1px solid;  
+  padding: 20px;
+}
+
+
+#main-doc {
+  position: absolute;
+  margin-left: 260px;
+}
+
+header {
+  font-size: 20px; 
+  margin: 10px;
+  color: purple;
+}
+
+p {
+  margin: 15px;
+}
+
+code {
+  display: block;
+  font-size: 13px;
+  padding: 5px;
+  background-color: #D2D2D2;
+  margin: 10px;
+  line-height: 1.5;
+  
+}
+
+#Reference  a {
+  color: blue;
+  text-decoration: underline;
+  display: inline-block;
+  padding: 0px;
+}
+
+@media only screen and (max-width: 550px) {
+  #navbar {
+    display: block;
+    position: absolute; 
+    height: 200px;
+    width: 100%;
+    z-index: 1;
+    background-color: #F6F5F5;
+  }
+
+  #main-doc {
+  position: absolute;
+  border-top: 1px dotted purple;
+  margin-top: 215px;
+  margin-left: 10px;
+}
+  
+}
